@@ -2,7 +2,7 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
-ifneq (,$(findstring $(TARGET_BOARD_PLATFORM),qsd8k msm7k))
+ifeq ($(BOARD_USES_HTC_CAMERA),true)
 
 LOCAL_C_FLAGS          += -O3
 LOCAL_MODULE_TAGS      := optional
