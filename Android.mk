@@ -2,7 +2,7 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
-ifeq ($(BOARD_USES_HTC_CAMERA),true)
+ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),buzz)
 
 LOCAL_C_FLAGS          += -O3
 LOCAL_MODULE_TAGS      := optional
